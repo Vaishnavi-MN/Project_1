@@ -43,7 +43,9 @@ for year in range(start_year, end_year + 1): # Loop through each year
         }
 
         response = requests.get(url, params=params)   # Send request to the USGS API
-        response.status_code
+        if response.status_code != 200:
+            print(f"Request failed for {start_date}: {response.status_code}")
+            continue
         data = response.json()
 
         # ===========================
