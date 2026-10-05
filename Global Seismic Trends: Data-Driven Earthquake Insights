@@ -1,0 +1,4 @@
+Collected earthquake data from the USGS API
+Cleaned and transformed the data using Python and Pandas
+Stored and analyzed the data using MySQL
+Created an interactive Streamlit dashboard
