@@ -106,7 +106,7 @@ print(data.isnull().mean())
 data.columns = data.columns.str.strip()
 data["time"] = pd.to_datetime(data["time"],unit="ms")
 data["updated"] = pd.to_datetime(data["updated"],unit="ms")
-data["country"] = data["place"].str.split(",").str[-1]
+data["country"] = data["place"].str.split(",").str[-1].astype(str)
 data["alert"] = data["alert"].str.lower()
 data["year"] = data["time"].dt.year
 data["month"] = data["time"].dt.month
