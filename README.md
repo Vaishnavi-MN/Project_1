@@ -1,2 +1,2 @@
-# Project_1
-Global Seismic Trends: Data-Driven Earthquake Insights
+# Project_1_Global Seismic Trends: Data-Driven Earthquake Insights
+
